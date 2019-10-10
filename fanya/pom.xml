@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.xxd.cn</groupId>
-  <artifactId>xiaoxiaodou</artifactId>
+  <artifactId>fanya</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>xiaoxiaodou Maven Webapp</name>
+  <name>fanya Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -16,6 +16,20 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>xiaoxiaodou</finalName>
+    <finalName>fanya</finalName>
+    <pluginManagement>
+    	<plugins>
+    		<plugin>
+	          <groupId>org.apache.tomcat.maven</groupId>
+	          <artifactId>tomcat7-maven-plugin</artifactId>
+	          <version>2.2</version>
+	          <configuration>
+	          	<port>8000</port>
+	          	<!-- 配置项目访问路径，这样就不需要用项目名作为项目访问路径了 -->
+	          	<path>/</path>
+	          </configuration>
+        	</plugin>   	
+    	</plugins>   
+    </pluginManagement>
   </build>
 </project>
