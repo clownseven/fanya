@@ -24,7 +24,7 @@
 	          <artifactId>tomcat7-maven-plugin</artifactId>
 	          <version>2.2</version>
 	          <configuration>
-	          	<port>8000</port>
+	          	<port>8887</port>
 	          	<!-- 配置项目访问路径，这样就不需要用项目名作为项目访问路径了 -->
 	          	<path>/</path>
 	          </configuration>
